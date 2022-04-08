@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 78px;
     background: #11101d;
     padding: 6px 14px;
@@ -55,39 +55,15 @@ body {
     height: 50px;
     width: 50px;
     line-height: 50px;
+    font-size: 30px;
+    text-align: center;
     transform: translateX(-50%);
     /* border: 1px dashed red; */
 }
 .sidebar.active #btn {
     left: 90%;
-}
-.sidebar .bx-chevrons-right {
+    transform: translateX(-50%) rotate(180deg);
     position: absolute;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;    
-    font-size: 30px;
-    text-align: center;
-    opacity: 1;
-    pointer-events: auto;
-}
-.sidebar.active .bx-chevrons-right {
-    opacity: 0;
-    pointer-events: none;
-}
-.sidebar .bx-chevrons-left {
-    opacity: 0;
-    pointer-events: none;
-}
-.sidebar.active .bx-chevrons-left {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;    
-    font-size: 30px;
-    text-align: center;
-    opacity: 1;
-    pointer-events: auto;
 }
 .sidebar ul {
     margin-top: 20px;
