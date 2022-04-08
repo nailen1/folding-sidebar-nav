@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folding sidebar navigator</title>
+    <link rel="stylesheet" href="folding-sidebar-nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bx-world'></i>
+                <div class="logo-name">UUZUU</div>
+            </div>
+            <div id="btn">
+                <i class='bx bx-chevrons-right'></i>
+                <i class='bx bx-chevrons-left'></i>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links-name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-flask'></i>
+                    <span class="links-name">Phys</span>
+                </a>
+                <span class="tooltip">Physics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-math'></i>
+                    <span class="links-name">Math</span>
+                </a>
+                <span class="tooltip">Mathematics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-hourglass-bottom'></i>
+                    <span class="links-name">Phil</span>
+                </a>
+                <span class="tooltip">Philosophy</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-message-dots' ></i>
+                    <span class="links-name">Words</span>
+                </a>
+                <span class="tooltip">Words</span>
+            </li>
+            <!-- 취미독서: 비실질적 추상적 지적활동. 곡괭이질: 단순 반복에 가까운 지적 경제활동  -->
+            <li>
+                <a href="#">
+                    <i class='bx bxs-map-alt'></i>
+                    <span class="links-name">Map</span>
+                </a>
+                <span class="tooltip">Map</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+                    <span class="links-name">Datalab</span>
+                </a>
+                <span class="tooltip"Datalab>Datalab</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="profile-dirac.jpeg" alt="">
+                    <div class="name-job">
+                        <div class="name">Daniel Young</div>
+                        <div class="job">Theoretical Physicist</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="logout"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home-content">
+        <div class="text">
+            <h1>Introduction</h1>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        let searchBtn = document.querySelector('.bx-search');
+        const activeSidebar = function(){
+            sidebar.classList.toggle("active");
+        }
+        btn.onclick = activeSidebar;
+        searchBtn.onclick = activeSidebar;
+    </script>
+</body>
+</html>
